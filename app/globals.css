@@ -46,6 +46,9 @@
 }
 
 html {
+  /* Everything on the site is sized in rem, so this one number scales the
+     whole design proportionally. Raise it to make the site bigger. */
+  font-size: 118%;
   -webkit-text-size-adjust: 100%;
   /* The full-bleed band below uses 100vw; this keeps a scrollbar from
      turning that into a sideways scroll. */
@@ -64,7 +67,7 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: "Times New Roman", Times, Georgia, serif;
-  font-size: 20px;
+  font-size: 1.08rem;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
