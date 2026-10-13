@@ -30,11 +30,11 @@ function Citation({ a }: { a: Article }) {
 export default function Research() {
   return (
     <div className="mx-auto max-w-3xl">
-      <PageTitle lead={researchAreas.join(" · ")}>Research</PageTitle>
+      <PageTitle lead={researchAreas.join(" \u00b7 ")}>Research</PageTitle>
 
       <p className="mb-10 text-ink-soft">{researchStatement}</p>
 
-      <Section title={`Peer-reviewed articles (${articles.length})`}>
+      <Section title="Peer-reviewed articles">
         <ul>
           {articles.map((a) => (
             <YearRow key={a.title} year={a.year}>
