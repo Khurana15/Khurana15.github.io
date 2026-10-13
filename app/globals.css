@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   One typeface throughout: Times. One type scale across every page.
+   --------------------------------------------------------------------------- */
+:root {
+  --bg: #fbf9f5;
+  --band: #f1ece3;
+  --surface: #faf7f2;
+  --ink: #14110e;
+  --ink-soft: #14110e;
+  --ink-faint: #332e27;
+  --rule: #ddd4c5;
+  --accent: #2c2723;
+  --accent-soft: #e6ddcf;
+  --on-accent: #f7f3ec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1714;
+    --band: #221e19;
+    --surface: #221e1a;
+    --ink: #f7f2e9;
+    --ink-soft: #f7f2e9;
+    --ink-faint: #cfc6b8;
+    --rule: #413a31;
+    --accent: #e8dcc8;
+    --accent-soft: #2e2822;
+    --on-accent: #1a1714;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-band: var(--band);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  /* The full-bleed band below uses 100vw; this keeps a scrollbar from
+     turning that into a sideways scroll. */
+  overflow-x: hidden;
+}
+
+/* Breaks an element out of the centered column so it spans the viewport. */
+.full-bleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+  padding-right: calc(50vw - 50%);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 20px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Same family as the body. These classes exist only so headings can carry
+   their own weight and tracking — never a second typeface. */
+.font-display,
+.font-cite {
+  font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+.font-display {
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  text-wrap: balance;
+}
+
+/* Must live in @layer base — an unlayered rule would outrank every Tailwind
+   utility and silently override text colors on links. */
+@layer base {
+  a {
+    color: inherit;
+  }
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media print {
+  nav,
+  footer {
+    display: none;
+  }
+}
