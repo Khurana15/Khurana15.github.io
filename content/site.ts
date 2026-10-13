@@ -13,7 +13,7 @@ export const person = {
   name: "Indu Khurana",
   credential: "Ph.D.",
   // The one-line version of what you do. Shown large on the homepage.
-  tagline: "I study how institutions and context shape who becomes an entrepreneur, and how early-stage firms develop.",
+  tagline: "I study how institutions and context shape who becomes an entrepreneur, and early stage firm dynamics.",
   titles: [
     "Associate Professor of Economics and Business, Hampden-Sydney College",
     "Senior Research Fellow, Institute for Development Strategies, Indiana University Bloomington",
@@ -247,14 +247,14 @@ export const otherPublications = [
 
 // Titles are withheld while manuscripts are under review.
 export const underReview = [
-  { authors: "Khurana, I., Allison, T. H., Kunapuli, R., Lee, D. J., & Renko, M.", venue: "Journal of Business Venturing", status: "Revise and resubmit, first-round revision resubmitted" },
+  { authors: "Khurana, I., Allison, T. H., Kunapuli, R., Lee, D. J., & Renko, M.", venue: "Journal of Business Venturing", status: "Revise and resubmit, second-round revision in preparation" },
   { authors: "Khurana, I., Wood, M. S., & Klein, P. G.", venue: "Strategic Entrepreneurship Journal", status: "Revise and resubmit, first round" },
   { authors: "Sheth, A., & Khurana, I.", venue: "Technological Forecasting and Social Change", status: "Under first-round review" },
 ];
 
 export const inProgress = [
   { title: "Navigating the Knowledge Breadth–Depth Paradox in Entrepreneurship", authors: "with Packard, M., Tamvada, J. P., & Audretsch, D. B." },
-  { title: "When Uncertainty Rises: How Ecosystem Structure Shapes Entrepreneurial Entry", authors: "with Sheth, A., & Audretsch, D. B." },
+  { title: "When Uncertainty Rises: How Ecosystem Structure Shapes Entrepreneurial Entry", authors: "with Sheth, A." },
   { title: "Orchestrating Sustainable Entrepreneurial Ecosystems", authors: "with Dutta, D., Corbett, A. C., & York, J." },
   { title: "A Gendered Perspective of Moral Violations", authors: "with Lee, D. J." },
   { title: "The Role of Religion in Entrepreneurship", authors: "with Packard, M., & Tamvada, J. P.", note: "Nominated for the Best Responsible Research Paper Award, 2024 SMS Conference" },
@@ -266,9 +266,13 @@ export const inProgress = [
 // -----------------------------------------------------------------------------
 
 // Indu's own wording, from her previous Research page. Don't rewrite it.
-export const researchStatement = `My research examines how institutional environments and individual
-  contexts influence entrepreneurial behavior, bridging macro and micro-level factors using
-  econometric analysis, experiments, and NLP methodologies.`;
+export const researchStatement = `My research focuses on how institutional and individual contexts shape entrepreneurial
+   behavior, examining macro-level forces, such as social welfare programs and policy
+   uncertainty, alongside micro-level decision-making shaped by factors like time availability,
+   gender, religion, education and socioeconomic background. Methodologically, my work draws extensively on causal
+inference, including difference-in-differences, event-study designs, fixed-effects models,
+instrumental variables, and matching, as well as longitudinal and panel-data analysis, survival
+analysis, and natural-language and text analysis.`;
 
 export const teachingPhilosophy = [
   `My teaching centers on fostering critical thinking, encouraging creativity, and inspiring
