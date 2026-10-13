@@ -38,7 +38,7 @@ export const bio = [
    Florida International University, along with a Master of Philosophy and Master of Commerce
    from the Delhi School of Economics.`,
   `My research focuses on how institutional and individual contexts shape entrepreneurial
-   behavior, examining macro-level forces, such as social welfare programs policy
+   behavior, examining macro-level forces, such as social welfare programs, policy
    uncertainty, and geopolitical uncertainty, alongside micro-level decision-making shaped by factors like time availability,
    gender, religion, education and socioeconomic background.`,
   `I serve as Editor at Small Business Economics and as Chair of the Teaching Committee for the
