@@ -6,7 +6,7 @@ export default function Home() {
       {/* Name, wide bar, rule — then a full-width band holding photo and bio. */}
       <div className="text-center">
         <h1 className="font-display text-[2.8rem] leading-tight sm:text-[3.4rem]">
-          {person.name}
+          {person.name}, {person.credential}
         </h1>
         <span
           aria-hidden
