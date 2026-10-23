@@ -246,15 +246,18 @@ export const otherPublications = [
 ];
 
 // Titles are withheld while manuscripts are under review.
+export const reviseAndResubmit = [
+  { authors: "Khurana, I., Allison, T. H., Kunapuli, R., Lee, D. J., & Renko, M.", venue: "Journal of Business Venturing", status: "Second-round revision submitted" },
+  { authors: "Khurana, I., Wood, M. S., & Klein, P. G.", venue: "Strategic Entrepreneurship Journal", status: "First-round revision in preparation" },
+];
+
 export const underReview = [
-  { authors: "Khurana, I., Allison, T. H., Kunapuli, R., Lee, D. J., & Renko, M.", venue: "Journal of Business Venturing", status: "Revise and resubmit, second-round revision in preparation" },
-  { authors: "Khurana, I., Wood, M. S., & Klein, P. G.", venue: "Strategic Entrepreneurship Journal", status: "Revise and resubmit, first round" },
-  { authors: "Sheth, A., & Khurana, I.", venue: "Technological Forecasting and Social Change", status: "Under first-round review" },
+  { authors: "Khurana, I., & Sheth, A.", venue: "Journal of Business Venturing" },
+  { authors: "Sheth, A., & Khurana, I.", venue: "Technological Forecasting and Social Change" },
 ];
 
 export const inProgress = [
   { title: "Navigating the Knowledge Breadth–Depth Paradox in Entrepreneurship", authors: "with Packard, M., Tamvada, J. P., & Audretsch, D. B." },
-  { title: "When Uncertainty Rises: How Ecosystem Structure Shapes Entrepreneurial Entry", authors: "with Sheth, A." },
   { title: "Orchestrating Sustainable Entrepreneurial Ecosystems", authors: "with Dutta, D., Corbett, A. C., & York, J." },
   { title: "A Gendered Perspective of Moral Violations", authors: "with Lee, D. J." },
   { title: "The Role of Religion in Entrepreneurship", authors: "with Packard, M., & Tamvada, J. P.", note: "Nominated for the Best Responsible Research Paper Award, 2024 SMS Conference" },
