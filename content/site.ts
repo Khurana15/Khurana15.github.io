@@ -252,7 +252,7 @@ export const reviseAndResubmit = [
 ];
 
 export const underReview = [
-  { authors: "Khurana, I., & Sheth, A.", venue: "Journal of Business Venturing" },
+  { authors: "Khurana, I., Sheth, A., & Audretsch, D. B.", venue: "Journal of Business Venturing" },
   { authors: "Sheth, A., & Khurana, I.", venue: "Technological Forecasting and Social Change" },
 ];
 
