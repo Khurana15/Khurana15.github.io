@@ -28,10 +28,19 @@ function Citation({ a }: { a: Article }) {
   );
 }
 
+/** Sub-heading inside a section — same typeface, one step down. */
+function SubHeading({ children }: { children: string }) {
+  return (
+    <h3 className="font-display mb-1 mt-5 text-[1.08rem] first:mt-3">
+      {children}
+    </h3>
+  );
+}
+
 export default function Research() {
   return (
     <div className="mx-auto max-w-3xl">
-      <PageTitle lead={researchAreas.join(" \u00b7 ")}>Research</PageTitle>
+      <PageTitle lead={researchAreas.join(" · ")}>Research</PageTitle>
 
       <p className="mb-10 text-ink-soft">{researchStatement}</p>
 
@@ -55,20 +64,26 @@ export default function Research() {
         </ul>
       </Section>
 
-      <Section title="Revise and resubmit">
+      {/* Revise-and-resubmit and under-review manuscripts sit in one block,
+          under one heading, with the note about titles stated once at the top. */}
+      <Section title="Manuscripts under revision and review">
+        <p className="text-[0.85rem] italic text-ink-faint">
+          Manuscript titles omitted while under review.
+        </p>
+
+        <SubHeading>Revise and Resubmit</SubHeading>
         <ul>
           {reviseAndResubmit.map((m) => (
             <li key={m.authors + m.venue} className="py-2">
               <p className="font-cite text-[0.95rem] leading-snug">
                 {m.authors}, <span className="italic">{m.venue}</span>.{" "}
-                <span className="text-ink-faint">{m.status}</span>
+                <span className="text-ink-faint">{m.status}.</span>
               </p>
             </li>
           ))}
         </ul>
-      </Section>
 
-      <Section title="Under review">
+        <SubHeading>Under Review</SubHeading>
         <ul>
           {underReview.map((m) => (
             <li key={m.authors + m.venue} className="py-2">
@@ -78,9 +93,6 @@ export default function Research() {
             </li>
           ))}
         </ul>
-        <p className="mt-2 text-[0.82rem] italic text-ink-faint">
-          Titles withheld while under review and revision.
-        </p>
       </Section>
 
       <Section title="Work in progress">
