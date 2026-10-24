@@ -8,6 +8,7 @@ import {
   otherPublications,
   researchAreas,
   researchStatement,
+  reviseAndResubmit,
   underReview,
 } from "@/content/site";
 
@@ -54,9 +55,9 @@ export default function Research() {
         </ul>
       </Section>
 
-      <Section title="Under review">
+      <Section title="Revise and resubmit">
         <ul>
-          {underReview.map((m) => (
+          {reviseAndResubmit.map((m) => (
             <li key={m.authors + m.venue} className="py-2">
               <p className="font-cite text-[0.95rem] leading-snug">
                 {m.authors}, <span className="italic">{m.venue}</span>.{" "}
@@ -65,8 +66,20 @@ export default function Research() {
             </li>
           ))}
         </ul>
+      </Section>
+
+      <Section title="Under review">
+        <ul>
+          {underReview.map((m) => (
+            <li key={m.authors + m.venue} className="py-2">
+              <p className="font-cite text-[0.95rem] leading-snug">
+                {m.authors}, <span className="italic">{m.venue}</span>.
+              </p>
+            </li>
+          ))}
+        </ul>
         <p className="mt-2 text-[0.82rem] italic text-ink-faint">
-          Titles withheld while under review.
+          Titles withheld while under review and revision.
         </p>
       </Section>
 
