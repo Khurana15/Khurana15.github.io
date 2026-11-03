@@ -42,10 +42,9 @@ export const bio = [
    uncertainty, and geopolitical uncertainty, alongside micro-level decision-making shaped
    by factors like time availability, gender, religion, education, and socioeconomic
    background.`,
-  `I serve as Editor at Small Business Economics.`,
-  `I also chair the Teaching Committee for the Entrepreneurship Division at the Academy of
-   Management, where I organize entrepreneurship pedagogy events that connect scholars and
-   practitioners worldwide.`,
+  `I serve as Editor at Small Business Economics. I also chair the Teaching Committee for the
+   Entrepreneurship Division at the Academy of Management, where I organize entrepreneurship
+   pedagogy events that connect scholars and practitioners worldwide.`,
 ];
 
 export const researchAreas = [
