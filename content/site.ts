@@ -34,16 +34,20 @@ export const person = {
 export const bio = [
   `I am an Associate Professor of Economics and Business at Hampden-Sydney College in Virginia
    and a Senior Research Fellow at the Institute for Development Strategies at Indiana University
-   Bloomington. I completed my PhD in Economics with an entrepreneurship specialization from
-   Florida International University, along with a Master of Philosophy and Master of Commerce
-   from the Delhi School of Economics.`,
-  `My research focuses on how institutional and individual contexts shape entrepreneurial
-   behavior, examining macro-level forces, such as social welfare programs, policy
-   uncertainty, and geopolitical uncertainty, alongside micro-level decision-making shaped by factors like time availability,
-   gender, religion, education and socioeconomic background.`,
-  `I serve as Editor at Small Business Economics and as Chair of the Teaching Committee for the
-   Entrepreneurship Division at the Academy of Management, wherein I organize entrepreneurship
-   pedagogy-focused events, connecting scholars and practitioners worldwide.`,
+   Bloomington. I earned my Ph.D. in Economics, with a specialization in entrepreneurship, from
+   Florida International University. I also hold a Master of Philosophy and a Master of Commerce
+   from the Delhi School of Economics, University of Delhi.`,
+  `My research examines how institutional and individual contexts shape who becomes an
+   entrepreneur, looking at macro-level forces such as social welfare programs, policy
+   uncertainty, and geopolitical uncertainty, alongside micro-level decision-making shaped
+   by factors like time availability, gender, religion, education, and socioeconomic
+   background. My work has appeared in Strategic Entrepreneurship Journal, Small Business
+   Economics, Journal of Business Research, and International Small Business Journal,
+   among others.`,
+  `I serve as Editor at Small Business Economics.`,
+  `I also chair the Teaching Committee for the Entrepreneurship Division at the Academy of
+   Management, where I organize entrepreneurship pedagogy events that connect scholars and
+   practitioners worldwide.`,
 ];
 
 export const researchAreas = [
