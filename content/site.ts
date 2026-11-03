@@ -41,9 +41,7 @@ export const bio = [
    entrepreneur, looking at macro-level forces such as social welfare programs, policy
    uncertainty, and geopolitical uncertainty, alongside micro-level decision-making shaped
    by factors like time availability, gender, religion, education, and socioeconomic
-   background. My work has appeared in Strategic Entrepreneurship Journal, Small Business
-   Economics, Journal of Business Research, and International Small Business Journal,
-   among others.`,
+   background.`,
   `I serve as Editor at Small Business Economics.`,
   `I also chair the Teaching Committee for the Entrepreneurship Division at the Academy of
    Management, where I organize entrepreneurship pedagogy events that connect scholars and
